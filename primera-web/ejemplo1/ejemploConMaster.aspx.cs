@@ -7,11 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace ejemplo1
 {
-	public partial class About : Page
+	public partial class ejemploConMaster : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			Title = "Hola que tal";
+	
+		}
+
+		protected void btnAceptar_Click(object sender, EventArgs e)
+		{
+			string nombre = txtNombre.Text;
+			lblsaludo.Text = "Hola " + nombre;
 		}
 	}
 }
