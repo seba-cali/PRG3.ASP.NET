@@ -10,6 +10,8 @@
     <form id="form1" runat="server">
         <div>
            <h1 style="color: red;">Pagina vacia</h1>
+											<h3>Te damos la bienvenida a la web</h3>
+           <a href="About">Regresar</a>
         </div>
     </form>
 </body>
