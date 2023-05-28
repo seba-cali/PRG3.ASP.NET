@@ -20,7 +20,7 @@ namespace ejemplo1
 			lblsaludo.Text = "Hola " + nombre;
 
 
-			Response.Redirect("ejemploASPX.aspx", false);//Esta practica es para redireccionar a otra pagina, se dice que es una accion pesada para el servidor. false es para que no cancele la ejecucion de la pagina actual. entonces, si hay mas instrucciones abajo, se van a seguir ejecutando.
+			//Response.Redirect("ejemploASPX.aspx", false);//Esta practica es para redireccionar a otra pagina, se dice que es una accion pesada para el servidor. false es para que no cancele la ejecucion de la pagina actual. entonces, si hay mas instrucciones abajo, se van a seguir ejecutando.
 		}
 	}
 }
