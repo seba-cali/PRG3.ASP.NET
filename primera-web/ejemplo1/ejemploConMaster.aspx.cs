@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+//cambio
 namespace ejemplo1
 {
 	public partial class ejemploConMaster : System.Web.UI.Page
@@ -18,9 +18,16 @@ namespace ejemplo1
 		protected void btnAceptar_Click(object sender, EventArgs e)
 		{
 			string nombre = txtNombre.Text;
+			string password = txtPassword.Text;
 			lblsaludo.Text = "Hola " + nombre;
 
-			Response.Redirect("Default.aspx?nombre=" + nombre, false);
+			Session.Add("usuario", nombre);
+			Session.Add("pass", password);
+
+
+			Response.Redirect("Default.aspx", false);
+
+			//Response.Redirect("Default.aspx?nombre=" + nombre + "&pass=" +txtPassword.Text, false);
 
 			//Response.Redirect("ejemploASPX.aspx", false);//Esta practica es para redireccionar a otra pagina, se dice que es una accion pesada para el servidor. false es para que no cancele la ejecucion de la pagina actual. entonces, si hay mas instrucciones abajo, se van a seguir ejecutando.
 		}

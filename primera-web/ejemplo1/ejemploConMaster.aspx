@@ -3,12 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<h1>Ejemplo con Master</h1>
 
-	<asp:TextBox ID="txtNombre"  runat="server" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
+	<asp:TextBox ID="txtNombre" runat="server" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
+	<br />
+	<asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+	<br />
 	<asp:Button ID="btnAceptar" runat="server" OnClick="btnAceptar_Click" Text="Aceptar" />
 	<asp:Label Text="" ID="lblsaludo" runat="server" />
 	<br />
 	<asp:Label Text="" ID="lblSecundario" runat="server" />
 
-	//aca se pasan valores por disenio
-	<a href ="Default?id=3">DESCRIPCION</a>
+	<%--aca se pasan valores por disenio--%>
+	<%--<a href ="Default?id=3">DESCRIPCION</a>--%>
 </asp:Content>

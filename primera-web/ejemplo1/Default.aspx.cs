@@ -9,6 +9,7 @@ namespace ejemplo1
 {
 	public partial class _Default : Page
 	{
+		public string user { get; set; }
 		protected void Page_Load(object sender, EventArgs e)
 		{//reemplazar por nombre
 
@@ -24,7 +25,11 @@ namespace ejemplo1
 			//}
 
 			//operador ternario
-			string user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "Logueate";
+			//user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
+			user = Session["usuario"] != null ? Session["usuario"].ToString() :"";
+
+
+
 			lblUser.Text = user + " tu ingreso fue exitoso";
 
 		}
