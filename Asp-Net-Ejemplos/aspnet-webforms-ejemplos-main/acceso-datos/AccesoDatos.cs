@@ -15,8 +15,10 @@ namespace acceso_datos
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=POKEDEX_DB2; integrated security=sspi");
-            comando = new SqlCommand();
+			//conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=POKEDEX_DB2; integrated security=sspi");
+			conexion = new SqlConnection("server=localhost\\LABO3; database=POKEDEX_DB2; integrated security=false; user=sa; password=123xx;");
+			comando = new SqlCommand();
+			comando = new SqlCommand();
             comando.Connection = conexion;
         }
 
